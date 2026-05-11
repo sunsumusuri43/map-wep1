@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>세한대학교 통학버스 간편약도!</title>
+
+<style>
+body {
+    margin: 0;
+    padding: 20px;
+    font-family: Arial;
+    background: #f4f6f9;
+}
+
+.container {
+    max-width: 500px;
+    margin: auto;
+}
+
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 22px;
+    margin-bottom: 20px;
+}
+
+.card {
+    background: white;
+    padding: 18px;
+    margin-bottom: 15px;
+    border-radius: 12px;
+    box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+}
+
+h2 {
+    margin: 0 0 10px 0;
+    font-size: 16px;
+    color: #003366;
+}
+
+.map-box {
+    height: 180px;
+    background: #ddd;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    border-radius: 10px;
+    color:#666;
+}
+
+button {
+    width: 100%;
+    padding: 14px;
+    margin-top: 10px;
+    border: none;
+    border-radius: 10px;
+    background: #003366;
+    color: white;
+    font-size: 15px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="container">
+
+    <h1>세한대학교 통학버스 간편약도!</h1>
+
+    <div class="card">
+        <h2>약도 이미지</h2>
+<img src="map.png" class="map-img">
+    </div>
+
+    <div class="card">
+    <h2>탑승권 구매장소</h2>
+
+    <p><b>운동장 옆 복지관 000호</b> (지도 참고)</p>
+
+    <hr>
+
+    <h2>구매 가능 시간</h2>
+    <p><b>월요일, 화요일</b><br>
+    10:30 ~ 12:30<br>
+    16:10 ~ 16:40</p>
+</div>
+
+    <div class="card">
+        <h2>지도 바로가기</h2>
+
+        <button onclick="window.open('https://kko.to/xjz42bzpNF')">
+            카카오지도
+        </button>
+
+        <button onclick="window.open('https://naver.me/5xgLF00h')">
+            네이버지도
+        </button>
+    </div>
+
+    <div class="card">
+        <h2>문의사항</h2>
+        <p>추후 연락처 추가 예정</p>
+    </div>
+
+</div>
+
+</body>
+</html>
