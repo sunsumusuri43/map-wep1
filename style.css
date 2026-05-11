@@ -5,29 +5,41 @@ body {
     background: linear-gradient(180deg, #f4f6f9, #eef2f7);
 }
 
+/* 전체 컨테이너 */
 .container {
     max-width: 520px;
     margin: auto;
 }
 
-/* 제목 */
+/* =========================
+   🔷 제목 (포스터 헤드라인)
+   ========================= */
 h1 {
     text-align: center;
     color: #0a2a5e;
-    font-size: 22px;
-    font-weight: 800;
-    margin-bottom: 20px;
+    font-size: 23px;
+    font-weight: 900;
+    margin-bottom: 22px;
     letter-spacing: -0.5px;
 }
 
-/* 카드 스타일 */
+/* =========================
+   🔷 카드 (포스터 블록)
+   ========================= */
 .card {
     background: white;
     padding: 18px;
     margin-bottom: 14px;
-    border-radius: 16px;
-    box-shadow: 0 6px 18px rgba(0,0,0,0.08);
+    border-radius: 18px;
+
+    box-shadow: 0 8px 20px rgba(0,0,0,0.10);
     border: 1px solid rgba(0,0,0,0.04);
+
+    transition: transform 0.2s ease;
+}
+
+.card:active {
+    transform: scale(0.99);
 }
 
 /* 카드 제목 */
@@ -35,7 +47,7 @@ h2 {
     margin: 0 0 10px 0;
     font-size: 15px;
     color: #0a2a5e;
-    font-weight: 700;
+    font-weight: 800;
 }
 
 /* 일반 텍스트 */
@@ -43,35 +55,50 @@ p {
     margin: 6px 0;
     font-size: 14px;
     color: #333;
-    line-height: 1.4;
+    line-height: 1.5;
 }
 
-/* 약도 이미지 박스 */
+/* =========================
+   🖼️ 이미지 프레임 (핵심)
+   ========================= */
+.map-frame {
+    width: 100%;
+    max-width: 320px;
+    height: 220px;
+
+    margin: 10px auto 0;
+
+    border-radius: 18px;
+    overflow: hidden;
+
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+    background: #eee;
+}
+
 .map-img {
     width: 100%;
-    max-width: 280px;   /* ↓ 320 → 280 */
-    max-height: 180px;  /* ↓ 220 → 180 */
-    object-fit: contain;
+    height: 100%;
+    object-fit: cover;
+
     display: block;
-    margin: 0 auto;
-    border-radius: 12px;
-    box-shadow: 0 4px 10px rgba(0,0,0,0.08);
 }
 
-/* 버튼 스타일 */
+/* =========================
+   🔘 버튼 (앱 스타일)
+   ========================= */
 button {
     width: 100%;
     padding: 14px;
     margin-top: 10px;
 
     border: none;
-    border-radius: 12px;
+    border-radius: 14px;
 
     background: linear-gradient(135deg, #0a2a5e, #1b4fa3);
     color: white;
 
     font-size: 15px;
-    font-weight: 600;
+    font-weight: 700;
 
     cursor: pointer;
 
@@ -80,14 +107,16 @@ button {
 
 button:hover {
     transform: translateY(-1px);
-    box-shadow: 0 6px 14px rgba(0,0,0,0.15);
+    box-shadow: 0 8px 18px rgba(0,0,0,0.18);
 }
 
 button:active {
     transform: scale(0.98);
 }
 
-/* 구분선 */
+/* =========================
+   ✏️ 구분선
+   ========================= */
 hr {
     border: none;
     height: 1px;
