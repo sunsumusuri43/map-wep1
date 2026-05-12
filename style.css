@@ -124,6 +124,8 @@ hr {
     margin: 10px 0;
 }
 .small-frame {
-    max-width: 260px;
-    height: 100px;
+    width: 220px !important;
+    height: 90px !important;
+
+    margin: 10px auto !important;
 }
