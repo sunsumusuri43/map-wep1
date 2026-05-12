@@ -123,3 +123,7 @@ hr {
     background: #eee;
     margin: 10px 0;
 }
+.small-frame {
+    max-width: 240px;
+    height: 140px;
+}
